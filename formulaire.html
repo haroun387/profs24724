@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="utf-8">
+    <title>Enseignant.e.s au campus de Villeneuve-en-Retz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2><center>Enseignant.e.s au campus de Villeneuve-en-Retz</center></h2><br />
+        <form id="enseignantForm" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><input type="file" id="photo" name="photo" accept="image/*"></td>
+                    <td>
+                        <select id="type" name="type">
+                            <option value="brut">Brut</option>
+                            <option value="sims">Sims</option>
+                        </select>
+                    </td>
+                    <td><input type="text" id="kode" name="kode"></td>
+                    <td><input type="text" id="discipline" name="discipline"></td>
+                    <td><input type="text" id="telephone" name="telephone"></td>
+                    <td><input type="text" id="courriel" name="courriel"></td>
+                    <td><input type="text" id="residence" name="residence"></td>
+                    <td><input type="text" id="linkedin" name="linkedin"></td>
+                    <td><input type="text" id="x" name="x"></td>
+                    <td><input type="text" id="insta" name="insta"></td>
+                    <td><input type="text" id="tiktok" name="tiktok"></td>
+                    <td><input type="text" id="youtube" name="youtube"></td>
+                </tr>
+            </table>
+            <input type="button" value="Enregistrer les informations saisies" onclick="enregistrerEnseignant()">
+        </form>
+        <div id="result"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
