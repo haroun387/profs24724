@@ -1,0 +1,41 @@
+<form action="process_form.php" method="post" enctype="multipart/form-data">
+    <table>
+        <!-- Autres champs de formulaire -->
+        <tr>
+            <td><input type="file" name="photo" accept="image/*"></td>
+            <td>
+                <select name="type">
+                    <option value="brut">Brut</option>
+                    <option value="sims">Sims</option>
+                </select>
+            </td>
+            <td><input type="text" name="kode"></td>
+            <!-- Autres champs de formulaire -->
+            <td><select name="type">
+                <option value="francais">Français</option>
+                        <option value="philosophie">Philosophie</option>
+                        <option value="hgemc">Histoire-Géographie-ÉMC</option>
+                        <option value="langues">Langues</option>
+                        <option value="maths">Mathématiques</option>
+                        <option value="mathphys">Mathématiques, Physique-Chimie</option>
+                        <option value="physchim">Physique-Chimie</option>
+                        <option value="svt">Sciences de la Vie et de la Terre</option>
+                        <option value="svtoratoire">SVT, Art Oratoire</option>
+                        <option value="eps">Éducation Physique et Sportive</option>
+                        <option value="techno">Technologie</option>
+                        <option value="artsplastic">Arts Plastiques</option>
+                        <option value="oratoire">Art Oratoire</option>
+                        <option value="music">Éducation Musicale</option>
+            </select></td>
+            <td><input type="text" name="telephone"></td>
+            <td><input type="text" name="courriel"></td>
+            <td><input type="text" name="residence"></td>
+            <td><input type="text" name="linkedin"></td>
+            <td><input type="text" name="x"></td>
+            <td><input type="text" name="insta"></td>
+            <td><input type="text" name="tiktok"></td>
+            <td><input type="text" name="youtube"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Enregistrer les informations saisies" name="validator">
+</form>
