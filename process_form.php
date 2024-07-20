@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Configuration de la base de données
     $servername = "localhost";
-    $username = "root";
+    $username = "pma"; //root logiquement
     $password = ""; // Remplacez par votre mot de passe MySQL si nécessaire
     $dbname = "profsprojetharoun_20240724"; // Nom de la base de données
 
