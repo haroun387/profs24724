@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Enseignant.e.s au campus de Villeneuve-en-Retz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Enseignant.e.s au campus de Villeneuve-en-Retz</h1><br />
+    <form method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>Photo</th><th>Code</th><th>Type</th><th>Discipline(s)</th><th>Téléphone</th><th>Courriel</th><th>Résidence</th><th>X</th><th>LinkedIn</th><th>Instagram</th><th>TikTok</th><th>Youtube</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="photo[]" accept="image/*" required>
+                </td>
+                <td>
+                    <input type="text" name="kode[]" required>
+                </td>
+                <td>
+                    <select name="type[]" required>
+                        <option value="brut">Brut</option>
+                        <option value="sims">Sims</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="discipline[]" required>
+                        <option value="francais">Français</option>
+                        <option value="philosophie">Philosophie</option>
+                        <option value="hgemc">Histoire-Géographie-ÉMC</option>
+                        <option value="langues">Langues</option>
+                        <option value="maths">Mathématiques</option>
+                        <option value="mathphys">Mathématiques, Physique-Chimie</option>
+                        <option value="physchim">Physique-Chimie</option>
+                        <option value="svt">Sciences de la Vie et de la Terre</option>
+                        <option value="svtoratoire">SVT, Art Oratoire</option>
+                        <option value="eps">Éducation Physique et Sportive</option>
+                        <option value="techno">Technologie</option>
+                        <option value="artsplastic">Arts Plastiques</option>
+                        <option value="oratoir">Art Oratoire</option>
+                        <option value="music">Éducation Musicale</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="tel" name="telephone[]" required>
+                </td>
+                <td>
+                    <input type="email" name="kourriel[]" required>
+                </td>
+                <td>
+                    <input type="text" name="residence[]" required>
+                </td>
+                <td>
+                    <input type="url" name="x[]" required>
+                </td>
+                <td>
+                    <input type="url" name="linkedin[]" required>
+                </td>
+                <td>
+                    <input type="url" name="insta[]" required>
+                </td>
+                <td>
+                    <input type="url" name="tiktok[]" required>
+                </td>
+                <td>
+                    <input type="url" name="youtube[]" required>
+                </td>
+            </tr>
+            <!-- Ajoutez plus de lignes ici si nécessaire -->
+        </table><br />
+        <input type="submit" value="Enregistrer les informations saisies" name="validator">
+    </form>
+</main>
+</body>
+</html>
